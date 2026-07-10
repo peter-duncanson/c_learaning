@@ -483,27 +483,6 @@ int fact_no_recursion(int n)
 // =============================================================================
 // (18) Write a recursive version of the gcd function.
 
-// int gcd(int a, int b)
-// {
-//      int temp;
-//
-//      if (a < b)
-//      {
-//          temp = a;
-//          a = b;
-//          b = temp;
-//      }
-//
-//      while (a)
-//      {
-//          temp = a;
-//          a = b % a;
-//          b = temp;
-//      }
-//
-//      return n;
-// }
-
 int gcd_recursive(int a, int b)
 {
     if (!a) return b;
