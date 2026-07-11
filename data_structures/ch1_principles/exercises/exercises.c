@@ -79,7 +79,7 @@ double weighted_average(double vec[], int n)
 // *stuff = another; another = yetanother; yetanother = *stuff }
 
 // this function switches two numbers
-void switch(int *first, int *second)
+void switch_numbers(int *first, int *second)
 {
     int temp = *first;
     *first = *second;
