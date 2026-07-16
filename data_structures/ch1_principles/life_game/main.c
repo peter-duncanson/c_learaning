@@ -1,15 +1,12 @@
-#include <stdio.h>
-#include <unistd.h>
 #include "life.h"
 
 int main(void)
 {
     int row, col;
-    bool manual, all_dead;
     Grid map;
     Grid newmap;
     init(map);
-    writeMap(map);
+    write_map(map);
 
     printf("This is the initial configuration you have chosen.\n"
            "Press < Enter > to continue\n");
@@ -21,7 +18,7 @@ int main(void)
         {
             for (col = 1; col <= MAXCOL; col++)
             {
-                switch (neighborCount(map, row, col))
+                switch (neighbor_count(map, row, col))
                 {
                     case 0:
                     case 1:
@@ -43,11 +40,10 @@ int main(void)
                 }
             }
         }
-        copyMap(map, newmap);
-        writeMap(map);
+        copy_map(map, newmap);
+        write_map(map);
         usleep(500000);
         // printf("Do you wish to continue?");
 
     } while (true);
-
 }
