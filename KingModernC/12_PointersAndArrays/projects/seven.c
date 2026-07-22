@@ -1,0 +1,6 @@
+// ================================================================================================
+// Chapter 12 Pointers and Arrays - Project 7
+//
+// Modify the maxmin.c program of section 11.4 so that the max_min() function uses a pointer
+// instead of an integer to keep track of the current position in the array.
+// ================================================================================================
