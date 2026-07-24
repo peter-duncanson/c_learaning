@@ -297,22 +297,83 @@
 // int temperatures[7][24];
 // Write a statement that uses the search function from exercise 7 to search the entire
 // temperatures array for the value 32.
+<<<<<<< HEAD
+// 
+// void print_array_twod(int *a, int rows, int cols)
+// {
+//     int i  = 0;
+//     for (int *p = a; p < a + rows * cols; p++)
+//     {
+//         printf("%2d ", *p);
+//         if (++i % cols == 0) puts("");
+//     }
+//
+//     puts("");
+// }
+//
+// void rfill_array(int *a, int n, int mod)
+// {
+//     srand((unsigned) time(NULL));
+//
+//     for (int *p = a; p < a + n; p++)
+//     {
+//         *p = (rand() % mod);
+//     }
+//
+// }
+//
+// bool search(const int *a, int n, int key)
+// {
+//     for (const int *p = a; p < a + n; p++)
+//     {
+//         if (*p == key) return true;
+//     }
+//     return false;
+// }
+// if (search(temperatures[0], DAYS * HOURS, 30))
+// {
+//     puts("true");
+// }
+// else
+// {
+//     puts("false");
+// }
+=======
 //
 // for (int i = 0; i < 7; i++)
 //     if (search(temeratures, 24, 32)) 
 //         printf("Found\n");
 //
+>>>>>>> ec3bd4e18a7c853e614d83e49368a5ec39e4edb5
 // ================================================================================================
 
 // ================================================================================================
 // (15) Write a loop that prints all temperature readings stored in row i of the temperatures array
 // from exercise 14. Use a pointer to visit each element of the row.
+//
+// void print_array_twod(int *a, int rows, int cols)
+// {
+//     int i  = 0;
+//     for (int *p = a; p < a + rows * cols; p++)
+//     {
+//         printf("%2d ", *p);
+//         if (++i % cols == 0) puts("");
+//     }
+//
+//     puts("");
+// }
+//
 // ================================================================================================
 
 // ================================================================================================
 // (16) Write a loop that prints the highest temperature in the temperature array from exercise 14
 // for each day of the week. The loop body should call the find_largest() function, passing it one
 // row of the array at a time.
+//
+// for (int *p = temperatures[0]; p < temperatures[0] + DAYS * HOURS; p += HOURS)
+// {
+//     printf("Hottest day: %d\n", find_largest(p, HOURS));
+// }
 // ================================================================================================
 
 // ================================================================================================
@@ -329,6 +390,18 @@
 //
 //      return sum;
 // }
+//
+// int sum_twod_array(const int a[][LEN], int n)
+// {
+//     int sum = 0;
+//
+//     for (int *p = a[0]; p < a[0] + LEN * n; p++)
+//     {
+//         sum += *p;
+//     }
+//     return sum;
+// }
+//
 // ================================================================================================
 
 // ================================================================================================
